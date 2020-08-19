@@ -82,6 +82,7 @@ function View:removeMediator(mediatorName)
                 self:removeObserver(v,mediator)
             end
         end
+        self.mediatorMap[mediatorName] = nil
         mediator:onRemove()
     end
     return mediator

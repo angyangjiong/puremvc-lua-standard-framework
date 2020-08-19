@@ -15,8 +15,8 @@ function Observer:notifyObserver(notification)
     end
 end
 
-function Observer:compareNotifyContext(notifyMethod)
-    return self.notifyMethod == notifyMethod
+function Observer:compareNotifyContext(notifyContext)
+    return self.notifyContext == notifyContext
 end
 
 return Observer

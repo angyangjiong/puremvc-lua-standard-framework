@@ -39,7 +39,7 @@ end
 function Controller:removeCommand(notificationName)
     if not self:hasCommand(notificationName) then
         return
-    end 
+    end
     self.view:removeObserver(notificationName , self)
     self.commandMap[notificationName] = nil
 end

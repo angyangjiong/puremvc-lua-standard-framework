@@ -1,4 +1,4 @@
-local Mediator = class("Mediator")
+local Mediator = class("Mediator", Puremvc.Notifier)
 
 function Mediator:ctor(mediatorName ,viewComponent)
     if not mediatorName then

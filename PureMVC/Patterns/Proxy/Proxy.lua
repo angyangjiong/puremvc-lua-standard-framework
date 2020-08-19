@@ -1,4 +1,4 @@
-local Proxy = class("Proxy")
+local Proxy = class("Proxy", Puremvc.Notifier)
 
 function Proxy:ctor(proxyName, data)
     if not proxyName then
